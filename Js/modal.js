@@ -7,7 +7,7 @@ const burger = document.querySelector('.burger');
 let currentImage = {
     src: "",
     index: 0,
-}
+}   
 
 const openModal = () => {
     images.forEach((image, index) => {
