@@ -84,6 +84,7 @@ h1 {
     font-weight: 200;
     letter-spacing: 0.4rem;
     text-shadow: 0px 0px 3px black;
+    animation: fadeIn 1s ease-in;
 }
 
 h3 {
@@ -91,6 +92,8 @@ h3 {
     letter-spacing: 0.3rem;
     font-size: 1.5rem;
     text-shadow: 0px 0px 3px black;
+    animation: fadeIn 1s ease-in 0.2s;
+    animation-fill-mode: backwards;
 }
 
 .fa {
@@ -102,6 +105,8 @@ h3 {
     margin: 0 2rem;
     border-radius: 50%;
     transition: opacity 50ms ease-out;
+    animation: fadeIn 1s ease-in 0.4s;
+    animation-fill-mode: backwards;
 }
 
 .fa:hover {
@@ -133,5 +138,14 @@ h3 {
 @media screen and (max-width: 450px) {
     html {
         font-size: 9px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
