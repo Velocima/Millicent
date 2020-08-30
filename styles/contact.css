@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    border-style: border-box;
+    font-size: 16px;
+}
+.banner {
+    height:40vh;
+    background-image: url("../images/HENNA/Banner-Contact-full.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner h1 {
+    font-family: "acumin-pro-wide", sans-serif;
+    font-weight: 100;
+    color: white;
+    font-size: 80px;
+    letter-spacing: 0.9em;
+    text-indent: 0.8em;
+    text-shadow: 1px 1px 2px black;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 38vh;
+    padding-bottom: 2vh;
+    background-color: rgb(230, 230, 230);
+}
+
+.content h2 {
+    padding: 20px;
+    font-family: 'Cormorant', serif;
+    font-weight: 300;
+    font-size: 2.5em;
+}
+.content h4 {
+    padding: 20px;
+    font-family: "acumin-pro-wide", sans-serif;
+    font-weight: 200;
+    font-size: 2em;
+    color: hsl(0, 0%, 30%);
+}
+
+.content p {
+    font-family: 'Cormorant', serif;
+    font-weight: 300;
+    font-size: 1.5em;
+    padding: 0 20px 20px;
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact-active {
+    transform: scale(0.9);
+}
+
+.far, .fas {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(41, 122, 228);;
+}
+
+@media screen and (max-width: 1000px) {
+    .banner h1 {
+        font-size: 60px;
+        letter-spacing: 0.7em;
+        text-indent: 0.6em;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .banner h1 {
+        font-size: 50px;
+        letter-spacing: 0.4em;
+        text-indent: 0.4em;
+    }
+}
+@media screen and (max-width: 450px) {
+    .banner h1 {
+        font-size: 35px;
+        letter-spacing: 0.3em;
+        text-indent: 0.3em;
+    }
+
+    .far, .fas, .content h4 {
+        font-size: 1.5em;
+    }
+
+    .content p {
+        font-size: 1.25em;
+    }
+}

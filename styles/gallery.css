@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border-style: border-box;
+    font-size: 16px;
+}
+.html {
+    overflow-y: scroll;
+}
+
+.hide-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scroll {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.body {
+    background-color: rgb(230, 230, 230);
+}
+
+.banner {
+    height:40vh;
+    background-image: url("../images/HENNA/Banner-Gallery-full.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner h1 {
+    font-family: "acumin-pro-wide", sans-serif;
+    font-weight: 100;
+    color: white;
+    font-size: 80px;
+    letter-spacing: 0.9em;
+    text-indent: 0.8em;
+    text-shadow: 1px 1px 2px black;
+}
+
+.content {
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 0;
+}
+
+.image-container {
+    overflow: hidden;
+    margin: 1vw;
+}
+.content img {
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    width: 28vw;
+    height: 28vw;
+    transition: transform 0.3s;
+}
+
+.content img:hover {
+    transform: scale(1.1);
+}
+
+.headline {
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 100vh;
+    min-height: 80vh;
+    width: 88vw;
+    margin: 0 auto;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.headline-1 {
+    background-image: url('/images/HENNA/Center-1.jpg');
+}
+
+.headline-2 {
+    background-image: url('/images/HENNA/Center-2.jpg');
+}
+
+.headline-3 {
+    background-image: url('/images/HENNA/125.jpg');
+}
+
+.headline-4 {
+    background-image: url('/images/HENNA/129.jpg');
+}
+
+h2, h4 {
+    text-align: center;
+    color: white;
+    opacity: 0.85;
+}
+
+h2 {
+    font-size: 6em;
+    letter-spacing: 0.25em;
+    font-family: 'Cormorant', serif;
+    font-weight: 300;
+    padding: 15px;
+}
+
+h4 {
+    font-family: "acumin-pro-wide", sans-serif;
+    font-weight: 100;
+    font-size: 1.75em;
+    letter-spacing: 0.1em;
+    padding: 15px;
+}
+
+.quote h4 {
+    text-shadow: 1px 1px black;
+    max-width:70%;
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+    color: white;
+    text-align: center;
+    font-family: 'Cormorant', serif;
+}
+
+.modal {
+    z-index: 30;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(0, 0%, 30%, 0.7);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+
+.modal-open {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.close {
+    background-color: hsl(0, 0%, 30%, 0.7);
+    z-index: 40;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    color: white;
+    font-size:2.5em;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    opacity: 0.95;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.close:hover, .right:hover, .left:hover {
+    color: hsl(0, 0%, 20%);
+    opacity: 0.7;
+}
+.close:hover {
+    background-color: hsl(0, 0%, 95%);
+}
+
+.image-1, .image-2 {
+    z-index: 40;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 80vw;
+    max-height: 90vh;
+    border-radius: 5px;
+    opacity: 1;
+    transition: opacity 0.8s;
+}
+
+.hide-image {
+    opacity: 0;
+    z-index: 20;
+    pointer-events: none;
+}
+
+.right, .left {
+    display: flex;
+    cursor: pointer;
+    height: 100%;
+    flex: 1;
+    align-items: center;
+    color: white;
+    transition: all 0.3s;
+}
+
+.left {
+    justify-content: flex-start;
+    padding-left: 5vw;
+}
+.right {
+    justify-content: flex-end;
+    padding-right: 5vw;
+}
+.modal span {
+    color: inherit;
+    font-size:3em;
+    font-weight: 700;
+    opacity: 0.95;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width: 1000px) {
+    .banner h1 {
+        font-size: 60px;
+        letter-spacing: 0.7em;
+        text-indent: 0.6em;
+    }
+
+    .content img {
+        height: 43vw;
+        min-width: 43vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .banner h1 {
+        font-size: 50px;
+        letter-spacing: 0.4em;
+        text-indent: 0.4em;
+    }
+
+    h2 {
+        font-size: 4.5em;
+        letter-spacing: 0.15em;
+    }
+
+    h4 {
+        font-size: 1.2em;
+    }
+    .quote h4 {
+        font-weight: 200;
+    }
+    p {
+        font-size: 1em;
+    }
+    .close {
+        top: 15px;
+        right: 15px;
+        font-size:2em;
+        width: 45px;
+        height: 45px;
+        border-radius: 3px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .banner h1 {
+        font-size: 35px;
+        letter-spacing: 0.3em;
+        text-indent: 0.3em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    .headline h4 {
+        font-size: 1em;
+    }
+
+    .close {
+        top: 15px;
+        right: 15px;
+        font-size:1.5em;
+        width: 30px;
+        height: 30px;
+    }
+}
