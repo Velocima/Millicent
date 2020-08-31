@@ -7,6 +7,9 @@
     background-color: rgb(230, 230, 230);
 }
 a {
+    -webkit-transition: opacity 50ms ease-out;
+    -moz-transition: opacity 50ms ease-out;
+    -o-transition: opacity 50ms ease-out;
     transition: opacity 50ms ease-out;
     text-decoration: none;
 }
@@ -44,6 +47,9 @@ a:hover {
     text-decoration: none;
     margin: 20px 2rem;
     border-radius: 50%;
+    -webkit-transition: opacity 50ms ease-out;
+    -moz-transition: opacity 50ms ease-out;
+    -o-transition: opacity 50ms ease-out;
     transition: opacity 50ms ease-out;
 }
 

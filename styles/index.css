@@ -39,6 +39,9 @@ nav a {
 
 span {
     font-size: 20px;
+    -webkit-transition: opacity 50ms ease-out;
+    -moz-transition: opacity 50ms ease-out;
+    -o-transition: opacity 50ms ease-out;
     transition: opacity 50ms ease-out;
 }
 
@@ -113,6 +116,9 @@ span:hover {
     width: 100vw;
 }
 .title-container {
+    -webkit-animation: fadeIn 1s;
+    -moz-animation: fadeIn 1s;
+    -o-animation: fadeIn 1s;
     animation: fadeIn 1s;
     display: grid;
     grid-template-rows: 2fr 1fr;
@@ -138,6 +144,9 @@ h1 {
     font-weight: 200;
     letter-spacing: 0.4rem;
     text-shadow: 0px 0px 3px black;
+    -webkit-animation: fadeIn 1s ease-in;
+    -moz-animation: fadeIn 1s ease-in;
+    -o-animation: fadeIn 1s ease-in;
     animation: fadeIn 1s ease-in;
 }
 
@@ -146,7 +155,13 @@ h3 {
     letter-spacing: 0.3rem;
     font-size: 1.5rem;
     text-shadow: 0px 0px 3px black;
+    -webkit-animation: fadeIn 1s ease-in 0.3s;
+    -moz-animation: fadeIn 1s ease-in 0.3s;
+    -o-animation: fadeIn 1s ease-in 0.3s;
     animation: fadeIn 1s ease-in 0.3s;
+    -webkit-animation-fill-mode: backwards;
+    -moz-animation-fill-mode: backwards;
+    -o-animation-fill-mode: backwards;
     animation-fill-mode: backwards;
 }
 
@@ -158,8 +173,17 @@ h3 {
     text-decoration: none;
     margin: 0 2rem;
     border-radius: 50%;
+    -webkit-transition: opacity 50ms ease-out;
+    -moz-transition: opacity 50ms ease-out;
+    -o-transition: opacity 50ms ease-out;
     transition: opacity 50ms ease-out;
+    -webkit-animation: fadeIn 1s ease-in 0.6s;
+    -moz-animation: fadeIn 1s ease-in 0.6s;
+    -o-animation: fadeIn 1s ease-in 0.6s;
     animation: fadeIn 1s ease-in 0.6s;
+    -webkit-animation-fill-mode: backwards;
+    -moz-animation-fill-mode: backwards;
+    -o-animation-fill-mode: backwards;
     animation-fill-mode: backwards;
 }
 
