@@ -11,7 +11,7 @@ This is a portfolio website for Millicent Mehndi - Henna Artist.
 
 ### Design notes
 
-This has served as a learning project for HTML/CSS/JavaScript practice.
+This has served as a learning project for HTML/CSS/JavaScript.
 
 Any suggestions, improvements or bug fixes are welcomed!
 
