@@ -97,7 +97,7 @@ br {
 }
 @media screen and (max-width: 600px) {
     br {
-        display: initial;
+        display: block;
     }
 }
 @media screen and (max-width: 450px) {
