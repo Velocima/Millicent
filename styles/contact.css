@@ -77,7 +77,9 @@
     border-radius: 50%;
     background-color: rgb(41, 122, 228);;
 }
-
+br {
+    display: none;
+}
 @media screen and (max-width: 1000px) {
     .banner h1 {
         font-size: 60px;
@@ -91,6 +93,11 @@
         font-size: 50px;
         letter-spacing: 0.4em;
         text-indent: 0.4em;
+    }
+}
+@media screen and (max-width: 600px) {
+    br {
+        display: initial;
     }
 }
 @media screen and (max-width: 450px) {
